@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Object finder</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+         <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script><style type="text/css" data-glamor=""></style>
+
+         <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="bg.jpg">
+        <center>
+     <h1 class="btn btn-info heading">AI OBJECT FINDER
+         <p class="note">Note : The input name which you will give should match the name present in CoCo model then only it will detect</p>
+     </h1>
+     <br><br>
+     <h3 class="object">Object Name : </h3>
+     <input id="box" type="text" class="form-control input" placeholder="Enter object name" >
+    <br><br>
+    <button id="find" onclick="start()" class="btn btn-success">Start</button>
+    <br><br><br>
+    <span>
+        <button id="status" class="btn btn-warning" onclick="detect()"></button>
+        <button id="found" class="btn btn-danger" onclick="search()"></button>
+    </span>
+     </center>
+    </body>
+    <script src="main.js"></script>
+</html>
